@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+body {
+  background-color: hsl(210deg, 30%, 8%);
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./MemoryGame.module.css";
+import Brand from "./Brand";
 
 // Array of emoji characters used in the game
 const emojis = ["🌈", "🌺", "🎨", "🚀", "🍕", "🎸", "🐱", "🦄"];
@@ -102,6 +103,15 @@ const MemoryGame: React.FC = () => {
     <div className={styles.gameContainer}>
       <h1 className={styles.gameTitle}>Emoji Memory Game</h1>
       <p className={styles.gameDescription}>Made for hazzeldorn ✨</p>
+      <div className="mb-12">
+        <Brand />
+      </div>
+
+      {/* Display win message when the game is won */}
+      {isWin && (
+        <div className={styles.winMessage}>Congratulations! You won! ✨</div>
+      )}
+
       <div className={styles.gameBoard}>
         {/* Render each card */}
         {cards.map((card) => (
@@ -122,10 +132,6 @@ const MemoryGame: React.FC = () => {
       <button className={styles.restartButton} onClick={initializeGame}>
         Restart Game
       </button>
-      {/* Display win message when the game is won */}
-      {isWin && (
-        <div className={styles.winMessage}>Congratulations! You won! ✨</div>
-      )}
     </div>
   );
 };

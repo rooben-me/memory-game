@@ -1,6 +1,5 @@
 .gameContainer {
   font-family: "Inter", sans-serif;
-  background-color: hsl(210deg, 30%, 8%);
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -127,5 +126,5 @@
   font-weight: 700;
   color: #ffd60a;
   text-align: center;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
