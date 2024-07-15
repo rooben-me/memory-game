@@ -34,7 +34,7 @@ const Brand = () => {
       </Link>
 
       <Link
-        href="https://www.linkedin.com/posts/rooben-me_ui-ux-userexperience-activity-7218310729014075392-0ywm"
+        href="https://github.com/rooben-me/memory-game"
         target="_blank"
         className="group px-4 py-2 rounded-lg bg-fuchsia-900/10 border border-fuchsia-800/30 flex items-center gap-2 grayscale hover:grayscale-0 ease-in-out transition-all"
       >
